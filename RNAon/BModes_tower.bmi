@@ -1,5 +1,5 @@
 ======================   BModes v3.00 Main Input File  ==================
-RAAW-GE Tower
+IEA15 tower
 
 --------- General parameters ---------------------------------------------------------------------
 True      Echo        Echo input file contents to *.echo file if true.
