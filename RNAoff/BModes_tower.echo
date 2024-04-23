@@ -1,0 +1,134 @@
+            T  Echo           - Echo input file contents to *.echo file if true
+            2  beam_type      - beam type, 1: blade; 2: tower
+   0.0000E+00  rot_rpm        - rotor speed (rpm)
+   1.0000E+00  rpm_mult       - rotor speed multiplicative factor
+   1.4439E+02  radius         - rotor tip radius or tower height above ground (m)
+   1.5000E+01  rroot          - hub radius or tower-base height (m)
+   0.0000E+00  btp            - precone (deg)
+   0.0000E+00  bl_thp         - blade pitch setting (deg)
+            1  hub_conn       - hub-to-blade connectivity identifier
+           20  modepr         - number of modes to be printed
+            T  TabDelim       - output format (t: std; f: tab-delimited)
+            F  mid_node_tw    - t: output twist at mid nodes; f: do otherwise
+                                                                                                                                                                                                        
+--------- Blade-tip or tower-top mass properties --------------------------------------------                                                                                                           
+   0.0000E+00  tip_mass       - tip mass
+   0.0000E+00  cm_loc         - tip-mass c.m. location wrt the reference axis
+   0.0000E+00  cm_axial       - tip-mass c.m. axial offset wrt tip
+   0.0000E+00  ixx_tip        - mass moment of inertia about x axis (wt-specific)
+   0.0000E+00  iyy_tip        - mass moment of inertia about y axis
+   0.0000E+00  izz_tip        - mass moment of inertia about z axis
+   0.0000E+00  ixy_tip        - cross product of inertia
+   0.0000E+00  izx_tip        - cross product of inertia
+   0.0000E+00  iyz_tip        - cross product of inertia
+                                                                                                                                                                                                        
+--------- Distributed-property identifiers --------------------------------------------------------                                                                                                     
+            1  id_mat         - material isotropy identifier (not used; use later)
+               sec_props_file - name of beam section properties file (-)
+  "BModes_tower_prop.dat"
+                                                                                                                                                                                                        
+Property scaling factors..............................                                                                                                                                                  
+   1.0000E+00  sec_mass_mult  - mass density multiplier (-)
+   1.0000E+00  flp_iner_mult  - blade flap or tower f-a inertia multiplier (-)
+   1.0000E+00  lag_iner_mult  - blade lag or tower s-s inertia multiplier (-)
+   1.0000E+00  flp_stff_mult  - blade flap or tower f-a bending stiffness multiplier (-)
+   1.0000E+00  edge_stff_mult - blade lag or tower s-s bending stiffness multiplier (-)
+   1.0000E+00  tor_stff_mult  - torsion stiffness multiplier (-)
+   1.0000E+00  axial_stff_mul - axial stiffness multiplier (-)
+   1.0000E+00  cg_offst_mult  - cg offset multiplier (-)
+   1.0000E+00  sc_offst_mult  - shear center multiplier (-)
+   1.0000E+00  tc_offst_mult  - tension center multiplier (-)
+                                                                                                                                                                                                        
+--------- Finite element discretization --------------------------------------------------                                                                                                              
+           61  nselt          - number of blade or tower elements (-)
+Distance of element boundary nodes from blade or flexible-tower root (normalized wrt blade or tower length), el_loc()                                                                                   
+   0.0000E+00  el_loc         - array of normalized element locations (-)
+   3.4819E-03  el_loc         - array of normalized element locations (-)
+   1.0446E-02  el_loc         - array of normalized element locations (-)
+   1.7409E-02  el_loc         - array of normalized element locations (-)
+   2.4373E-02  el_loc         - array of normalized element locations (-)
+   3.1337E-02  el_loc         - array of normalized element locations (-)
+   3.8301E-02  el_loc         - array of normalized element locations (-)
+   4.5265E-02  el_loc         - array of normalized element locations (-)
+   5.2228E-02  el_loc         - array of normalized element locations (-)
+   5.9192E-02  el_loc         - array of normalized element locations (-)
+   6.6156E-02  el_loc         - array of normalized element locations (-)
+   7.3120E-02  el_loc         - array of normalized element locations (-)
+   8.0084E-02  el_loc         - array of normalized element locations (-)
+   8.7047E-02  el_loc         - array of normalized element locations (-)
+   9.4011E-02  el_loc         - array of normalized element locations (-)
+   1.0097E-01  el_loc         - array of normalized element locations (-)
+   1.0794E-01  el_loc         - array of normalized element locations (-)
+   1.1490E-01  el_loc         - array of normalized element locations (-)
+   1.2187E-01  el_loc         - array of normalized element locations (-)
+   1.2883E-01  el_loc         - array of normalized element locations (-)
+   1.3579E-01  el_loc         - array of normalized element locations (-)
+   1.3990E-01  el_loc         - array of normalized element locations (-)
+   1.4972E-01  el_loc         - array of normalized element locations (-)
+   1.5669E-01  el_loc         - array of normalized element locations (-)
+   1.6365E-01  el_loc         - array of normalized element locations (-)
+   1.7061E-01  el_loc         - array of normalized element locations (-)
+   1.7758E-01  el_loc         - array of normalized element locations (-)
+   1.8454E-01  el_loc         - array of normalized element locations (-)
+   1.9150E-01  el_loc         - array of normalized element locations (-)
+   1.9847E-01  el_loc         - array of normalized element locations (-)
+   2.0543E-01  el_loc         - array of normalized element locations (-)
+   2.1240E-01  el_loc         - array of normalized element locations (-)
+   2.1936E-01  el_loc         - array of normalized element locations (-)
+   2.2632E-01  el_loc         - array of normalized element locations (-)
+   2.3329E-01  el_loc         - array of normalized element locations (-)
+   2.4025E-01  el_loc         - array of normalized element locations (-)
+   2.4721E-01  el_loc         - array of normalized element locations (-)
+   2.5070E-01  el_loc         - array of normalized element locations (-)
+   3.2033E-01  el_loc         - array of normalized element locations (-)
+   3.7971E-01  el_loc         - array of normalized element locations (-)
+   4.2479E-01  el_loc         - array of normalized element locations (-)
+   4.5961E-01  el_loc         - array of normalized element locations (-)
+   4.8663E-01  el_loc         - array of normalized element locations (-)
+   5.1366E-01  el_loc         - array of normalized element locations (-)
+   5.4068E-01  el_loc         - array of normalized element locations (-)
+   5.6770E-01  el_loc         - array of normalized element locations (-)
+   5.9471E-01  el_loc         - array of normalized element locations (-)
+   6.2173E-01  el_loc         - array of normalized element locations (-)
+   6.4875E-01  el_loc         - array of normalized element locations (-)
+   6.7577E-01  el_loc         - array of normalized element locations (-)
+   7.0279E-01  el_loc         - array of normalized element locations (-)
+   7.2981E-01  el_loc         - array of normalized element locations (-)
+   7.5683E-01  el_loc         - array of normalized element locations (-)
+   7.8385E-01  el_loc         - array of normalized element locations (-)
+   8.1087E-01  el_loc         - array of normalized element locations (-)
+   8.3789E-01  el_loc         - array of normalized element locations (-)
+   8.6491E-01  el_loc         - array of normalized element locations (-)
+   8.9192E-01  el_loc         - array of normalized element locations (-)
+   9.1894E-01  el_loc         - array of normalized element locations (-)
+   9.4596E-01  el_loc         - array of normalized element locations (-)
+   9.7298E-01  el_loc         - array of normalized element locations (-)
+   1.0000E+00  el_loc         - array of normalized element locations (-)
+--------- Properties of tower support subsystem (read only if beam_type is 2) ------------                                                                                                              
+0           tow_support: : aditional tower support [0: no additional support; 1: floating-platform or monopile with or without tension wires] (-)                                                       
+            0  tow_support    - aditional tower support (-)
+Tower section properties                                                                                                                                                                                
+           20  n_secs         - number of blade or tower sections (-)
+                                                                                                                                                                                                        
+      sec_loc             str_tw              tw_iner            mass_den            flp_iner            edge_iner           flp_stff            edge_stff           tor_stff           axial_stff      
+        (-)                (deg)               (deg)              (kg/m)              (kg-m)              (kg-m)              (Nm^2)              (Nm^2)              (Nm^2)                (N)         
+0.00000     0.000     0.000 10314.844     0.000     0.000  3.07E+12  3.07E+12  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.10047     0.000     0.000 10314.844     0.000     0.000  3.07E+12  3.07E+12  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.10048     0.000     0.000  9523.819     0.000     0.000  2.83E+12  2.83E+12  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.20095     0.000     0.000  9453.084     0.000     0.000  2.77E+12  2.77E+12  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.20096     0.000     0.000  8761.306     0.000     0.000  2.57E+12  2.57E+12  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.30142     0.000     0.000  8333.524     0.000     0.000  2.21E+12  2.21E+12  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.30143     0.000     0.000  7943.340     0.000     0.000  2.11E+12  2.11E+12  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.40190     0.000     0.000  7428.459     0.000     0.000  1.72E+12  1.72E+12  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.40191     0.000     0.000  7087.214     0.000     0.000  1.64E+12  1.64E+12  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.50237     0.000     0.000  6538.098     0.000     0.000  1.29E+12  1.29E+12  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.50238     0.000     0.000  6197.175     0.000     0.000  1.22E+12  1.22E+12  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.60285     0.000     0.000  5616.516     0.000     0.000  9.12E+11  9.12E+11  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.60286     0.000     0.000  5253.478     0.000     0.000  8.53E+11  8.53E+11  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.70332     0.000     0.000  4910.276     0.000     0.000  6.97E+11  6.97E+11  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.70333     0.000     0.000  4334.168     0.000     0.000  6.15E+11  6.15E+11  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.80380     0.000     0.000  4232.817     0.000     0.000  5.73E+11  5.73E+11  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.80380     0.000     0.000  3673.388     0.000     0.000  4.98E+11  4.98E+11  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.90427     0.000     0.000  3577.283     0.000     0.000  4.60E+11  4.60E+11  1.00E+14  1.00E+14     0.000     0.000     0.000
+0.90428     0.000     0.000  4120.141     0.000     0.000  5.29E+11  5.29E+11  1.00E+14  1.00E+14     0.000     0.000     0.000
+1.00000     0.000     0.000  4074.837     0.000     0.000  5.12E+11  5.12E+11  1.00E+14  1.00E+14     0.000     0.000     0.000
